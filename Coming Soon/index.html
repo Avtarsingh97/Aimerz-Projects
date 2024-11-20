@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
 </head>
 <body>
-    <div class="contain flex" style="background-image: url(./Images/cute-abstract-modern-background-free-vector.jpg); height: 100vh; width: 100vw;">   
+    <div class="contain flex flex-col justify-center items-center" style="background-image: url(./Images/cute-abstract-modern-background-free-vector.jpg); height: 100vh; width: 100vw;">   
         <div class="content relative flex flex-col justify-center items-center z-1 m-auto">
             <div class="logo p-5">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="black" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
@@ -18,13 +18,14 @@
             <h1 class="block max-[645px]:text-3xl sm:text-5xl md:text-6xl lg:text-8xl xl:text-9xl text-center font-extrabold p-5">Coming Soon</h1>
             <p class="text-xl p-5 text-center w-2/3">In the meantime, Sign up for our monthly newsletter to stay up to date.</p>
             <div class="signup-section p-2">
-                <input type="email" name="email" id="email" placeholder="Email Address" class="p-4 rounded-full">
-                <button class="bg-black text-white p-4 rounded-full">Sign Up</button>
+                <input type="email" name="email" id="email" placeholder="Email Address" class="p-4 rounded-full hover:bg-slate-200 border-2 hover:border-black lg:w-[350px]">
+                <button class="bg-indigo-500 hover:bg-black text-white p-4 rounded-full lg:w-[150px]">Sign Up</button>
             </div>
-            <div class="social-icons p-5">
-                <i class="bi bi-instagram p-2"></i>
-                <i class="bi bi-twitter p-2"></i>
-            </div>
+            
+        </div>
+        <div class="social-icons p-5 flex flex-row">
+            <div class="hover:scale-125"><i class="bi bi-instagram p-2"></i></div>
+            <div class="hover:scale-125"><i class="bi bi-twitter p-2"></i></div>
         </div>
     </div>
 </body>
