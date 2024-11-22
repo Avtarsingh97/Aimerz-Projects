@@ -5,38 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FaceBook-Clone</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
 <body class="box-border m-0 p-0 overflow-auto min-[515px]:overflow-x-hidden">
-    <header class="flex justify-center items-center h-full bg-[#f2f4f7] w-screen ">
-        <section class="flex flex-col min-[901px]:flex-row justify-between items-center h-3/4 bg-sky-blue-200 w-[95%] lg:w-[75%] mt-[130px] mb-28 min-[901px]:mb-40">
-            <div class="left-sub-section w-[400px] lg:w-[550px] relative top-[-40px] min-[901px]:top-[-100px] left-[10px]" >
-                <div class="fb-logo">
-                    <img src="./images/4lCu2zih0ca.svg" alt="FaceBook Logo" class="h-[110px] min-[901px]:relative left-[-30px] top-[15px]">
+    <header class="flex flex-row justify-center items-center h-full bg-[#f2f4f7] w-screen">
+        <section class="flex flex-col min-[901px]:flex-row justify-between items-center w-[90%] lg:w-[90%] lg:pr-3 mt-[40px] min-[901px]:mt-[130px] mb-28 min-[901px]:mb-40 min-[1065px]:w-[1000px]">
+                <div class="left-sub-section w-[400px] lg:w-[500px] h-[100%] relative top-[-20px] text-center min-[901px]:text-left min-[901px]:top-[-110px]" >
+                    <div class="flex flex-col justify-center align-center">
+                        <div class="fb-logo max-[901px]:m-auto">
+                            <img src="./images/4lCu2zih0ca.svg" alt="FaceBook Logo" class="h-[110px] min-[901px]:relative left-[-30px] top-[15px]">
+                        </div>
+                        <div class="fb-content">
+                            <p class="text-2xl lg:text-[28px] font-[400]">Facebook helps you connect and share with the people in your life.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="fb-content">
-                    <p class="text-2xl lg:text-3xl">Facebook helps you connect and share with the people in your life.</p>
+                <div class="right-sub-section">
+                    <div class="w-[400px]">
+                        <div class="fb-form bg-white rounded-lg p-4 shadow-xl flex flex-col align-center justify-center">
+                            <form action="" class="grid gap-4">
+                                <input type="text" name="email-phone" placeholder="Email address or phone number" class="border rounded-lg w-full p-3 text-lg">
+                                <input type="password" name="password" placeholder="Password" class="border rounded-lg w-full p-3 text-lg">
+                                <input type="button" value="Log in" class="rounded-lg w-full px-5 py-3 text-xl bg-blue-600 text-white font-bold hover:bg-blue-500 duration-150 hover:cursor-pointer">
+                            </form>
+                            <div class="forget-section text-center py-3 pb-5 text-sky-800"><span class="hover:underline hover:cursor-pointer">Fogotten password?</span></div>
+                            <hr class="p-3">
+                            <input type="button" value="Create new account" class="rounded-lg px-5 py-3 text-lg bg-green-500 text-white font-bold m-auto mb-3 hover:bg-green-600 duration-200 hover:cursor-pointer">
+                        </div>
+                    </div>
+                    <div class="new-section text-center p-6 text-md">
+                        <p><strong class="hover:underline hover:cursor-pointer">Create a Page </strong>for a celebrity, brand or business.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="right-sub-section w-[400px] min-[901px]:mr-10">
-                <div class="fb-form bg-white rounded-lg p-4 shadow-xl flex flex-col align-center justify-center">
-                    <form action="" class="grid gap-4">
-                        <input type="text" name="email-phone" placeholder="Email address or phone number" class="border rounded-lg w-full p-3 text-lg">
-                        <input type="password" name="password" placeholder="Password" class="border rounded-lg w-full p-3 text-lg">
-                        <input type="button" value="Log in" class="rounded-lg w-full px-5 py-3 text-xl bg-blue-600 text-white font-bold hover:bg-blue-500 duration-150">
-                    </form>
-                    <div class="forget-section text-center py-3 pb-5 text-sky-800"><span class="hover:underline">Fogotten password?</span></div>
-                    <hr class="p-3">
-                    <input type="button" value="Create new account" class="rounded-lg px-5 py-3 text-lg bg-green-500 text-white font-bold m-auto mb-3 hover:bg-green-600 duration-200">
-                </div>
-                <div class="new-section text-center p-6 text-md">
-                    <p><strong class="hover:underline">Create a Page </strong>for a celebrity, brand or business.</p>
-                </div>
-            </div>
+            
         </section>
     </header>
     <footer>
         
-            <div class="container1 w-[90%] lg:w-[70%] m-auto">
+            <div class="container1 w-[90%] lg:w-[90%] m-auto min-[1065px]:w-[1000px]">
                 <div class="ullist1 flex flex-row mt-5 mb-2">
                     <ul class="footerullist flex gap-x-5 gap-y-2 text-sm text-[#8a8dae] flex-wrap leading-none">
                         <li><a href="" class="text-[#737373] font-medium">English(UK)</a></li>
