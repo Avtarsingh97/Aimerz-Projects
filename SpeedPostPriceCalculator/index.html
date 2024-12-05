@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-6xl text-center p-8">Speed Post Price Calculator</h1>
+    <hr>
+    <div class="container p-9 flex flex-col items-center text-decoration-none bg-blue-200 m-auto  rounded-xl my-2 lg:flex-row gap-8 sm:w-[1000px]">
+        <div class="left sm:w-[450px]">
+            <img src="images/cspc8.png" alt="Indian Post logo">
+        </div>
+        <div class="right flex flex-col items-center m-auto sm:w-[450px] ">
+            <label for="distance" class="text-4xl py-2">Distance</label>
+            <input type="text" id="distance" class="p-5 border border-black rounded-xl text-xl">
+            <label for="weight" class="text-4xl py-2">Weight</label>
+            <input type="text" id="weight" class="p-5 border border-black rounded-xl text-xl ">
+            <button id="calculate" class="text-xl px-5 py-2 border border-black rounded-xl bg-blue-500 my-2">Calculate</button>
+            <label for="finalPrice" class="text-4xl py-2" >Total Price</label>
+            <input type="text" id="finalPrice" class="p-5 border border-black rounded-xl text-xl">
+        
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
