@@ -1,0 +1,456 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+}
+
+*{
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    background: url('background.jpg') no-repeat center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+section {
+    padding-top: 50px; /* This should be equal to or larger than your navbar's height */
+    margin-top: -50px; /* This should be the same value as padding-top but negative */
+    display: block; /* Ensures the section behaves as a block-level element */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    margin: 0;
+    font-size: 40px;
+}
+
+.navbar h2{
+    background: linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu-item a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu-item a:hover{
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(120, 164, 230);
+    transition: color 0.4s ease-in-out;
+}
+
+
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-toggle .hamburger {
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    position: relative;
+}
+
+.nav-toggle .hamburger::before,
+.nav-toggle .hamburger::after {
+    content: '';
+    background: #fff;
+    width: 25px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.nav-button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.nav-toggle .hamburger::before {
+    top: -8px;
+}
+
+.nav-toggle .hamburger::after {
+    top: 8px;
+}
+
+@media (max-width: 550px) {
+    .nav-menu {
+        display: none;
+        width: 100%;
+        padding: 20px;
+        background: #333;
+        position: absolute;
+        top: 65px;
+        left: 0;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu-item {
+        margin: 10px 0;
+    }
+}
+
+/* ------------------About Container CSS-------------------- */
+
+.about-container {
+    text-align: center;
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Adjust transparency here */
+    margin: 100px auto;
+    max-width: 800px;
+    border-radius: 15px;
+    position:sticky;
+    
+}
+
+.about-section{
+    margin-top: 20px;
+}
+
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.profile-image:hover{
+    
+    box-shadow: 0px 0px 20px 9px #7590d4;
+    
+}
+
+
+
+.youtube-video iframe{
+    margin: 10px;
+    width: 40vw;
+    height: 300px;
+    
+}
+
+@media (max-width: 800px) {
+    
+    .youtube-video iframe{
+        width: 60%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 300px) {
+    .profile-image {
+        display: none;
+    }
+    .youtube-video iframe{
+        width: 90%;
+        height: 150px;
+    }
+}
+
+
+
+/* ---------Cards Section CSS-------------- */
+
+.horizontal-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-basis: calc(33.333% - 40px);
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out; 
+    position: relative; 
+}
+
+.card-image {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    transition: filter 0.5s ease-in-out;
+}
+
+.card-content {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    background: rgba(255, 255, 255, 0.8); 
+    transform: translateY(100%); 
+    transition: transform 0.5s ease-in-out; 
+}
+
+.card:hover .card-image {
+    filter: blur(1px); 
+}
+
+.card:hover .card-content {
+    transform: translateY(0); 
+}
+
+.card:hover {
+    transform: scale(1.03); 
+}
+
+@media (max-width: 768px) {
+    .horizontal-cards {
+        flex-direction: column;
+    }
+    .card {
+        display: block;
+        flex-basis: auto;
+        margin: 20px auto;
+        width:80%;
+        height:400px;
+    }
+}
+
+/* -----------------About Section CSS------------------ */
+
+.about-section {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .profile-pic img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Icon hover color */
+}
+
+/* ---------------contact us------------- */
+
+.contact-section {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 20px;
+    display: block;
+}
+
+.contact-form {
+    margin-top: 40px;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px lightblue, -1px -1px 20px lightblue;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    /* box-shadow: 2px 2px 5px lightblue; */
+    font-size: larger;
+    
+}
+
+.form-group .medium-option input{
+    width:15px;
+    
+}
+
+.canvas-size .size-option{
+    display: flex;
+    margin: 10px;
+}
+
+.canvas-medium .medium-option{
+    display:inline-block;
+    width:100%;
+    /* flex-wrap: wrap;
+    flex-direction:column; */
+    margin: 10px;
+
+}
+
+.canvas-size .size-option label{
+    margin: 0;
+    margin-right: 50px;
+}
+
+.canvas-medium .medium-option label{
+    display: inline-block;
+    width: 85%;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.canvas-size input{
+    width: 30px;
+    margin: 0;
+}
+
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* -------------footer section ------------ */
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .footer-info {
+        font-size: 14px;
+    }
+}

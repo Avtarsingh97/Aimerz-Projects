@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avtar Singh's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+</head>
+
+<body oncontextmenu="disableRightClick(event)">
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+        <h2 class="logo">Avtar Singh</h2>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <div class="nav-button">
+                <div class="ham-button">
+                    <i class="hamburger fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </button>
+
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a href="#home" class="nav-menu-link1">About</a></li>
+            <li class="nav-menu-item"><a href="#video" class="nav-menu-link2">Videos</a></li>
+            <li class="nav-menu-item"><a href="#portfolio" class="nav-menu-link3">Gallery</a></li>
+            
+            <li class="nav-menu-item"><a href="#contact" class="nav-menu-link4">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- home Section -->
+    <section id="home">
+        <div class="main-section">
+            <div class="about-container">
+
+                <img src="profile-img.jpg" alt="Avtar Singh" class="profile-image" oncontextmenu="disableRightClick(event)">
+
+
+                <h1>Artist Avtar Singh</h1>
+                <p>Avtar Singh is a renowned artist known for his unique approach to combining traditional and modern
+                    art
+                    forms. His work has been featured in numerous galleries around the world, captivating audiences with
+                    its
+                    depth and beauty.</p>
+                    <div class="social-icons">
+                        <a href="https://youtube.com/yourhandle" target="_blank" aria-label="Youtube"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://facebook.com/yourhandle" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/yourhandle" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- -------about section------- -->
+    <section id="video">
+        <div class="about-section" >
+            <div class="container" >
+                
+                
+            </div>
+            <div class="youtube-video">
+                <iframe src="https://www.youtube.com/embed/jURAIFZaBaU" title="Sidhu Moose Wala Drawing 😱🔥| Faber Castel 9000 Pencils | @ArtistAvtarSingh @sidhumoosewala" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/RjyIRKA1mCI" title="Learn How to Draw Rashmika Mandanna&#39;s Face From Artist Avtar Singh!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+  
+    </section>
+    <!-- Cards Section -->
+    <section id="portfolio">
+        <div class="horizontal-cards" id="portfolio">
+            <div class="card">
+                <img src="images1.jpg" alt="Image 1" class="card-image" oncontextmenu="disableRightClick(event)">
+                <div class="card-content">
+                    <h3>Title 1</h3>
+                    <p>Description for the first item...</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images2.jpg" alt="Image 2" class="card-image" oncontextmenu="disableRightClick(event)">
+                <div class="card-content">
+                    <h3>Title 2</h3>
+                    <p>Description for the second item...</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images.jpg" alt="Image 3" class="card-image" oncontextmenu="disableRightClick(event)">
+                <div class="card-content">
+                    <h3>Title 3</h3>
+                    <p>Description for the third item...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Feel free to reach out for collaborations or inquiries.</p>
+                <form action="your-server-endpoint" method="POST" class="contact-form">
+                    <div class="form-group">
+                        
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        
+                        <input type="email" id="email" name="email" placeholder="Enter Your Email ID" required>
+                    </div>
+                    <div class="form-group canvas-size">
+                        <label for="size">Select Size</label>
+                        <div class="size-option">
+                            <input type="radio" id="size" name="size">
+                            <label for="size">A4</label>
+                            <input type="radio" id="size" name="size">
+                            <label for="size">A3</label>
+                            <input type="radio" id="size" name="size">
+                            <label for="size">A2</label>
+                        </div>
+                    </div>
+                    <div class="form-group canvas-medium">
+                        <label for="medium">Select Medium</label>
+                        <div class="medium-option">
+                            <input type="radio" id="medium" name="medium">
+                            <label for="medium">Graphite Pencil Portrait(Blk & White)</label>
+                            <input type="radio" id="medium" name="medium">
+                            <label for="medium">Color Pencil Portrait</label><br>
+                            <input type="radio" id="medium" name="medium">
+                            <label for="medium">Acrylic Painting</label><br>
+                            <input type="radio" id="medium" name="medium">
+                            <label for="medium">Custom Thread Art</label><br>
+                            <input type="radio" id="medium" name="medium">
+                            <label for="medium">Digital Painting</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-info">
+                    <p>Email: officialavtar13@example.com</p>
+                    <p>Phone: +91 9039 247838</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
