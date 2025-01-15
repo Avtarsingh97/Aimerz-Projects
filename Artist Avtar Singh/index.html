@@ -42,7 +42,7 @@
         <div class="main-section">
             <div class="about-container">
 
-                <img src="profile-img.jpg" alt="Avtar Singh" class="profile-image" oncontextmenu="disableRightClick(event)">
+                <img src="src/profile-img.jpg" alt="Avtar Singh" class="profile-image" oncontextmenu="disableRightClick(event)">
 
 
                 <h1>Artist Avtar Singh</h1>
@@ -52,14 +52,13 @@
                     its
                     depth and beauty.</p>
                     <div class="social-icons">
-                        <a href="https://youtube.com/yourhandle" target="_blank" aria-label="Youtube"><i
+                        <a href="https://www.youtube.com/c/artistavtarsingh" target="_blank" aria-label="Youtube"><i
                                 class="fab fa-youtube"></i></a>
-                        <a href="https://facebook.com/yourhandle" target="_blank" aria-label="Facebook"><i
+                        <a href="https://www.facebook.com/artistavtarsingh" target="_blank" aria-label="Facebook"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i
+                        <a href="https://www.instagram.com/artist_avtar_singh" target="_blank" aria-label="Instagram"><i
                                 class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com/in/yourhandle" target="_blank" aria-label="LinkedIn"><i
-                                class="fab fa-linkedin-in"></i></a>
+                        
                     </div>
             </div>
             
@@ -83,21 +82,21 @@
     <section id="portfolio">
         <div class="horizontal-cards" id="portfolio">
             <div class="card">
-                <img src="images1.jpg" alt="Image 1" class="card-image" oncontextmenu="disableRightClick(event)">
+                <img src="src/images1.jpg" alt="Image 1" class="card-image" oncontextmenu="disableRightClick(event)">
                 <div class="card-content">
                     <h3>Title 1</h3>
                     <p>Description for the first item...</p>
                 </div>
             </div>
             <div class="card">
-                <img src="images2.jpg" alt="Image 2" class="card-image" oncontextmenu="disableRightClick(event)">
+                <img src="src/images2.jpg" alt="Image 2" class="card-image" oncontextmenu="disableRightClick(event)">
                 <div class="card-content">
                     <h3>Title 2</h3>
                     <p>Description for the second item...</p>
                 </div>
             </div>
             <div class="card">
-                <img src="images.jpg" alt="Image 3" class="card-image" oncontextmenu="disableRightClick(event)">
+                <img src="src/images.jpg" alt="Image 3" class="card-image" oncontextmenu="disableRightClick(event)">
                 <div class="card-content">
                     <h3>Title 3</h3>
                     <p>Description for the third item...</p>
@@ -106,12 +105,13 @@
         </div>
     </section>
 
+    <!-- Contact Us Section -->
     <section id="contact">
         <div class="contact-section">
             <div class="container">
                 <h2>Contact Us</h2>
                 <p>Feel free to reach out for collaborations or inquiries.</p>
-                <form action="your-server-endpoint" method="POST" class="contact-form">
+                <form class="contact-form">
                     <div class="form-group">
                         
                         <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
@@ -123,26 +123,26 @@
                     <div class="form-group canvas-size">
                         <label for="size">Select Size</label>
                         <div class="size-option">
-                            <input type="radio" id="size" name="size">
+                            <input type="radio" name="size" value="a4">
                             <label for="size">A4</label>
-                            <input type="radio" id="size" name="size">
+                            <input type="radio" name="size" value="a3">
                             <label for="size">A3</label>
-                            <input type="radio" id="size" name="size">
+                            <input type="radio" name="size" value="a2">
                             <label for="size">A2</label>
                         </div>
                     </div>
                     <div class="form-group canvas-medium">
                         <label for="medium">Select Medium</label>
                         <div class="medium-option">
-                            <input type="radio" id="medium" name="medium">
+                            <input type="radio" name="medium" value="graphite(b&k)">
                             <label for="medium">Graphite Pencil Portrait(Blk & White)</label>
-                            <input type="radio" id="medium" name="medium">
+                            <input type="radio" name="medium" value="colorPencil">
                             <label for="medium">Color Pencil Portrait</label><br>
-                            <input type="radio" id="medium" name="medium">
+                            <input type="radio" name="medium" value="acrylic">
                             <label for="medium">Acrylic Painting</label><br>
-                            <input type="radio" id="medium" name="medium">
+                            <input type="radio" name="medium" value="threadArt">
                             <label for="medium">Custom Thread Art</label><br>
-                            <input type="radio" id="medium" name="medium">
+                            <input type="radio" name="medium" value="digitalPainting">
                             <label for="medium">Digital Painting</label>
                         </div>
                     </div>
@@ -166,7 +166,12 @@
         </footer>
     </section>
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <script src="script.js"></script>
+    
+
 </body>
 
 </html>

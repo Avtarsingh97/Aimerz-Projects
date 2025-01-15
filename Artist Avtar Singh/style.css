@@ -15,7 +15,7 @@ body {
     margin: 0;
     padding: 0;
     
-    background: url('background.jpg') no-repeat center fixed;
+    background: url('src/background.jpg') no-repeat center fixed;
     background-size: cover;
     background-attachment: fixed;
     scroll-behavior: smooth;
